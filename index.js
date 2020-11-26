@@ -12,7 +12,7 @@ const cron = require('node-cron')
 const prefix = '>>';
 
 client.on('ready', ready => {
-    console.log("Restart!!");
+    console.log("restart!!!");
 });
 
 client.on('guildMemberAdd', member => {
