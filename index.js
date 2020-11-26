@@ -32,7 +32,7 @@ client.on('message', async message => {
         var msg = await message.channel.send(
             new Discord.MessageEmbed()
                 .setColor('#FFD700')
-                .setTitle('作成')
+                .setTitle('Welcome!')
                 .setDescription(`<@${member.id}>さんがDUCKにやって来ました！！`
                 )
         )
