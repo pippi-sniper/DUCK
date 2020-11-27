@@ -20,8 +20,7 @@ client.on('guildMemberAdd', member => {
         new Discord.MessageEmbed()
             .setColor('#FFD700')
             .setTitle('Welcome!')
-            .setDescription(`<@${member.id}>さんがDUCKにやって来ました！！`
-            )
+            .setDescription(`<@${member.id}>さんがDUCKにやって来ました！！`)
     );
     member.roles.add('781174285703708704');
 });
@@ -33,8 +32,7 @@ client.on('message', async message => {
             new Discord.MessageEmbed()
                 .setColor('#FFD700')
                 .setTitle('Welcome!')
-                .setDescription(`<@${member.id}>さんがDUCKにやって来ました！！`
-                )
+                .setDescription(`<@${member.id}>さんがDUCKにやって来ました！！`)
         )
     }
 });
