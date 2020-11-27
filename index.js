@@ -26,18 +26,6 @@ client.on('guildMemberAdd', member => {
 });
 
 client.on('message', async message => {
-    if (message.channel.id === '781186595716988939' && !message.author.bot) {
-        const name = message.content;
-        var msg = await message.channel.send(
-            new Discord.MessageEmbed()
-                .setColor('#FFD700')
-                .setTitle('Welcome!')
-                .setDescription(`<@${member.id}>さんがDUCKにやって来ました！！`)
-        )
-    }
-});
-
-client.on('message', async message => {
     var member;
     const [command, mention, rea] = message.content.slice(prefix.length).split(' ');
     switch(command){
