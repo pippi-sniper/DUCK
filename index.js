@@ -9,6 +9,7 @@ http
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const cron = require('node-cron')
+const lainan = require("lainan-api");
 const prefix = '>>';
 
 client.on('ready', ready => {
