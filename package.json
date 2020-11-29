@@ -12,6 +12,7 @@
     "dependencies": {
         "canvas": "^2.6.1",
         "discord.js": "^12.3.1",
-        "node-cron": "^2.0.3"
+        "node-cron": "^2.0.3",
+        "lainan-api": "^0.0.10"
     }
 }

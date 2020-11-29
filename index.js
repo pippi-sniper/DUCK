@@ -53,4 +53,14 @@ client.on('message', async message => {
     }
 })
 
+client.on("message", message => {
+    if (message.author.id == client.user.id) return;
+    lainan.message(message, (reaction) => {
+        if (!reaction.responder_bool.IsAuto_search) {
+            message.channel.send(reaction.reaction);
+        };
+    });
+});
+
+
 client.login(process.env.token);
